@@ -9,7 +9,7 @@ class ManhattanDistanceTest {
     void fail() {
         Point p1 = new Point(10 , 5);
         Point p2 = new Point(2 , 3);
-        assertThat(ManhattanDistance.manhattanDistance(p1 , p2))
+        assertThat(Point.manhattanDistance(p1 , p2))
                 .isEqualTo(8.2);
 
     }
@@ -18,7 +18,7 @@ class ManhattanDistanceTest {
     void it_should_not_fail() {
         Point p1 = new Point(10 , 5);
         Point p2 = new Point(2 , 3);
-        assertThat(ManhattanDistance.manhattanDistance(p1 , p2))
+        assertThat(Point.manhattanDistance(p1 , p2))
                 .isEqualTo(10);
     }
 }
